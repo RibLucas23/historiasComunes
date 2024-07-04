@@ -4,15 +4,12 @@ import React from 'react'
 export default function Cards({ data }) {
    return (
       <>
-         {/* <div className='flex p-4  min-h-64   border rounded-lg  min-w-full bg-white'> */}
          <div className='flex flex-col py-4 px-2 sm:px-4  items-center mx-4  border rounded-lg sm:min-w-full lg:flex-row   bg-white'>
 
-            {/* imagen */}
             <div className=' min-h-48 min-w-48  '>
                <Image className="rounded-lg w-full h-full" src="/HC.png" width={250} height={250} alt={'avatar'} />
             </div>
 
-            {/* textos */}
             <div className=' lg:w-3/4 flex flex-col  p-4 lg:justify-between  '>
                <div className=' lg:max-w-prose mb-2 '>
                   <p className='text-gray-500'>
@@ -26,7 +23,6 @@ export default function Cards({ data }) {
 
                   </p>
                </div>
-               {/* reproductor  */}
 
                <div className=' flex-col justify-end hidden lg:inline'>
                   <iframe src={data.iframePrograma} width="500" height="60" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen={true}></iframe>

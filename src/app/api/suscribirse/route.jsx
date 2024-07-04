@@ -1,19 +1,11 @@
 import nodemailer from 'nodemailer';
 
-// const transporter = nodemailer.createTransport({
-//    host: "smtp.ethereal.email",
-//    port: 587,
-//    secure: false, // Use `true` for port 465, `false` for all other ports
-//    auth: {
-//       user: "jesus.terry@ethereal.email",
-//       pass: "1C4H4GbBudgVTWD3WG",
-//    },
-// });
+
 const transporter = nodemailer.createTransport({
    service: 'gmail',
    auth: {
-      user: process.env.GMAIL_USER, // Tu dirección de correo electrónico
-      pass: process.env.GMAIL_PASS, // Tu contraseña de correo electrónico o app-specific password
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
    },
 });
 
